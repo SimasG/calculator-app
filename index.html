@@ -41,29 +41,31 @@
       </div>
     </header>
     <main>
-      <section class="calculation-container"></section>
-      <!-- <form class="calculation-form">   
+      <section class="calculation-container">
+        <div data-operand class="operand"></div>
+        <!-- <form class="calculation-form">   
         <input type="number" placeholder="0" class="bill-input" data-input-bill>
       </form> -->
+      </section>
       <section class="calculator-grid">
-        <button>7</button>
-        <button>8</button>
-        <button>9</button>
-        <button class="light-blue">DEL</button>
-        <button>4</button>
-        <button>5</button>
-        <button>6</button>
-        <button>+</button>
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-        <button>-</button>
-        <button>.</button>
-        <button>0</button>
-        <button>/</button>
-        <button>x</button>
-        <button class="span-two light-blue">RESET</button>
-        <button class="span-two red">=</button>
+        <button data-number>7</button>
+        <button data-number>8</button>
+        <button data-number>9</button>
+        <button data-delete class="light-blue">DEL</button>
+        <button data-number>4</button>
+        <button data-number>5</button>
+        <button data-number>6</button>
+        <button data-operation>+</button>
+        <button data-number>1</button>
+        <button data-number>2</button>
+        <button data-number>3</button>
+        <button data-operation>-</button>
+        <button data-number>.</button>
+        <button data-number>0</button>
+        <button data-operation>/</button>
+        <button data-operation>x</button>
+        <button data-reset class="span-two light-blue">RESET</button>
+        <button data-equals class="span-two red">=</button>
       </section>
     </main>
 
