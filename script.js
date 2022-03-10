@@ -52,6 +52,7 @@ class Calculator {
         computation = prev * current;
         break;
       case "/":
+        if (current === 0) return;
         computation = prev / current;
         break;
       // If none of these statements are true, the default is to not run anything
@@ -93,10 +94,9 @@ class Calculator {
       this.previousOperandTextElement.innerText = `${this.getDisplayNumber(
         this.previousOperand
       )} ${this.operation}`;
+    } else {
+      this.previousOperandTextElement.innerText = "";
     }
-    // else {
-    //   this.previousOperandTextElement.innerText = "";
-    // }
   }
 }
 
