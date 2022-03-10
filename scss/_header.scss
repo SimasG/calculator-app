@@ -1,0 +1,51 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3.2rem;
+  .logo-heading {
+    font-size: 3.2rem;
+    letter-spacing: -0.053rem;
+    color: $white;
+  }
+  .theme-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.4rem;
+    .theme-title {
+      font-size: 1.2rem;
+      color: $white;
+      letter-spacing: 0.1rem;
+      margin-top: 2.4rem;
+    }
+    .theme-subcontainer {
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+      height: 4.4rem;
+      ul {
+        display: flex;
+        justify-content: space-around;
+        width: 7.1rem;
+        li {
+          color: white;
+        }
+      }
+      .theme-btn-container {
+        width: 7.1rem;
+        height: 2.6rem;
+        border-radius: 13px;
+        background: $dark-blue;
+        .btn-theme-1 {
+          height: 1.6rem;
+          width: 1.6rem;
+          border-radius: 90px;
+          background: $red-btn;
+          margin-top: 0.4rem;
+          margin-left: 0.5rem;
+        }
+      }
+    }
+  }
+}
